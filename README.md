@@ -38,5 +38,9 @@ module.exports = {
 
 1. It's explicitly.
 1. It's antd-specific.
-1. It can be used in CRA directly without rejecting.
+1. It can be used in CRA directly without ejecting.
 1. It keeps your import statements, because webpack already has tree-shaking, it's unnecessary to import a component from a specific location.
+
+## License
+
+[MIT](LICENSE)
