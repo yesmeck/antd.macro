@@ -1,6 +1,6 @@
 {
   "name": "antd.macro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A babel macro that helps you import antd's style.",
   "keywords": [
     "antd",
