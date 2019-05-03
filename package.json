@@ -37,6 +37,7 @@
     "@babel/types": "^7.4.4",
     "@types/jest": "^24.0.12",
     "@types/node": "^11.13.9",
+    "antd": "^3.16.6",
     "babel-plugin-macros": "^2.5.1",
     "babel-plugin-tester": "^6.0.1",
     "husky": "^2.2.0",
@@ -51,6 +52,7 @@
     "@babel/helper-module-imports": "^7.0.0"
   },
   "peerDependencies": {
+    "antd": ">3",
     "babel-plugin-macros": ">2.0.0"
   }
 }
