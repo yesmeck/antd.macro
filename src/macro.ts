@@ -20,7 +20,7 @@ function importStyle(
   let newName = component.toLowerCase();
   switch (newName) {
     case 'datepicker':
-      component = 'date-picker';
+      newName = 'date-picker';
       break;
     case 'timepicker':
       newName = 'time-picker';
