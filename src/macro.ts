@@ -17,7 +17,33 @@ function importStyle(
   path: NodePath<t.Identifier>,
   config: Config
 ) {
-  let stylePath = `antd/es/${component.toLowerCase()}/style`;
+  let newName = component.toLowerCase();
+  switch (newName) {
+    case 'datepicker':
+      component = 'date-picker';
+      break;
+    case 'timepicker':
+      newName = 'time-picker';
+      break;
+    case 'autocomplete':
+      newName = 'auto-complete';
+      break;
+    case 'configprovider':
+      newName = 'config-provider';
+      break;
+    case 'inputnumber':
+      newName = 'input-number';
+      break;
+    case 'pageheader':
+      newName = 'page-header';
+      break;
+    case 'treeselect':
+      newName = 'tree-select';
+      break;
+    default:
+      break;
+  }
+  let stylePath = `antd/es/${newName}/style`;
   if (config.style === 'css') {
     stylePath = join(stylePath, 'css');
   }
