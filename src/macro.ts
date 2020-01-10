@@ -12,12 +12,16 @@ const defaultConfig: Config = {
   style: 'css',
 };
 
+function camelCaseToDash(str: string) {
+  return str.replace(/([a-zA-Z])(?=[A-Z])/g, '$1-').toLowerCase();
+}
+
 function importStyle(
   component: string,
   path: NodePath<t.Identifier>,
   config: Config
 ) {
-  let stylePath = `antd/es/${component.toLowerCase()}/style`;
+  let stylePath = `antd/es/${camelCaseToDash(component)}/style`;
   if (config.style === 'css') {
     stylePath = join(stylePath, 'css');
   }
